@@ -14,6 +14,7 @@ public class Validation {
 		String url = System.getProperty("databaseurl"); //Url to the database stored as environment variable (VM argument)
 		String user = System.getProperty("databaseusername"); // Database/connection username stored as environment variable (VM argument)
 		String password = System.getProperty("databasepassword"); // Database/connection password stored as environment variable (VM argument)
+		System.out.println(url + "|" + user + "|" + password);
 		Connection ourcon = DriverManager.getConnection(url, user, password);
 		Statement ourstat = ourcon.createStatement();
 		String DBQuery = "SELECT * FROM randomlogins WHERE name='"+username+"' AND pass='"+userpass+"'";

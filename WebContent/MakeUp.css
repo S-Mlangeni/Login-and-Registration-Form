@@ -1,3 +1,57 @@
-@charset "ISO-8859-1";
-	body {background-color: grey; color: black; text-align: center;}
-	h1 {color:#ffa800; text-align:center; text-decoration: underline;}
+	/* Resetting default style settings */
+	* { /* universal selector (i.e. selecting all elements) */
+    box-sizing: border-box; /*sizing with respect to the border */
+    padding: 0px;
+    margin: 0px;
+	}
+	
+	body {
+		background-color: grey; 
+		color: black; 
+		/*text-align: center;*/
+	}
+	
+	.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;		
+	}
+	
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: black solid 3px;
+		border-radius: 15px;
+		background-color: white;
+		padding: 20px;
+		min-width: 300px;
+	}
+	
+	.content h1 {
+		color:#ffa800;
+		/*text-align:center;*/ 
+		text-decoration: underline;
+	}
+	
+	.content form,input {
+		width: 100%;
+	}
+	
+	.content input {
+		padding: 10px;
+		border-radius: 5px;
+	}
+	
+	.content h1,p,form {
+		margin: 10px;
+	}
+	
+	.content form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
