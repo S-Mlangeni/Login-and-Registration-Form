@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<!-- Prevent scaling- and prevent the user from being able to zoom: -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <title>1st Page</title>
 </head>
 <body>
